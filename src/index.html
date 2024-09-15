@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/87ee3a16a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="output.css" />
+    <title>Huko Cafe</title>
+  </head>
+  <body class="text-huko-primary">
+    <header
+      id="landing-page"
+      class="flex flex-col h-screen bg-huko-secondary text-huko-primary"
+    >
+      <!-- Navbar -->
+      <nav
+        class="container flex items-center justify-between h-16 mx-auto md:h-28 lg:h-32"
+      >
+        <!-- Navbar Logo -->
+        <div class="flex items-center w-20 h-full ml-4 md:w-36 md:ml-0">
+          <a href="">
+            <img
+              src="../img/image.webp"
+              alt="Huko Logo"
+              class="object-contain max-h-full"
+            />
+          </a>
+        </div>
+
+        <!-- Navbar Button sm -->
+        <div class="flex items-center md:h-full">
+          <button
+            class="px-2 py-1 transition-all duration-300 ease-out border-2 rounded-md md:px-3 md:py-2 md:text-2xl md:mx-0 lg:hidden text-huko-3 border-huko-3 hover:bg-huko-3 hover:border-huko3 hover:text-huko-secondary"
+          >
+            Reservation
+          </button>
+
+          <!-- Navigation dropdown -->
+          <details class="relative lg:hidden">
+            <summary class="flex items-center p-4 cursor-pointer">
+              <svg
+                class="w-5 h-5 text-gray-700 md:w-10 md:h-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </summary>
+
+            <!-- Content navigation dropdown -->
+            <div
+              class="absolute right-0 z-10 w-48 p-2 mt-3 text-center rounded-md shadow-lg md:w-72 md:text-2xl bg-huko-secondary"
+            >
+              <a
+                href="#landing-page"
+                class="block px-4 py-2 rounded-md bg-huko-3 text-huko-secondary"
+                >Home</a
+              >
+              <a
+                href="#tentang-huko"
+                class="block px-4 py-2 transition-all ease-out rounded-md hover:bg-huko-3 hover:text-huko-secondary"
+                >About Us</a
+              >
+              <a
+                href="#menu"
+                class="block px-4 py-2 transition-all ease-out rounded-md hover:bg-huko-3 hover:text-huko-secondary"
+                >Menu</a
+              >
+              <a
+                href="#location"
+                class="block px-4 py-2 transition-all ease-out rounded-md hover:bg-huko-3 hover:text-huko-secondary"
+                >Location</a
+              >
+              <a
+                href="#gallery"
+                class="block px-4 py-2 transition-all ease-out rounded-md hover:bg-huko-3 hover:text-huko-secondary"
+                >Gallery</a
+              >
+            </div>
+          </details>
+        </div>
+
+        <!-- Navigation link lg -->
+        <div
+          class="hidden lg:flex lg:items-center text-huko-primary lg:text-xl"
+        >
+          <a
+            href="#landing-page"
+            class="px-2 py-1 mx-2 font-bold underline transition-all duration-200 ease-out text-huko-3 underline-offset-8 lg:mx-3"
+            >Home</a
+          >
+          <a
+            href="#tentang-huko"
+            class="px-2 py-1 mx-2 transition-all duration-200 ease-out hover:text-huko-3 lg:mx-3"
+            >About Us</a
+          >
+          <a
+            href="#menu"
+            class="px-2 py-1 mx-2 transition-all duration-200 ease-out hover:text-huko-3 lg:mx-3"
+            >Menu</a
+          >
+          <a
+            href="#location"
+            class="px-2 py-1 mx-2 transition-all duration-200 ease-out hover:text-huko-3 lg:mx-3"
+            >Location</a
+          >
+          <a
+            href="#gallery"
+            class="px-2 py-1 mx-2 transition-all duration-200 ease-out hover:text-huko-3 lg:mx-3"
+            >Gallery</a
+          >
+          <a href="#reservasi">
+            <button
+              class="px-3 py-2 mx-4 text-huko-3 hover:bg-huko-3 border-2 border-huko-3 transition-all ease-out duration-300 hover:text-[#E6E6E6] rounded-md"
+            >
+              Reservation
+            </button></a
+          >
+        </div>
+      </nav>
+
+      <!-- Section Hero -->
+      <section
+        class="container flex flex-col flex-1 mx-auto text-huko-primary lg:flex-row"
+      >
+        <!-- Hero Image -->
+        <div
+          class="flex justify-center mt-3 lg:order-2 h-1/2 md:w-full lg:w-2/5 lg:h-auto lg:mt-0 lg:items-center"
+        >
+          <img
+            src="../img/Food-hero.png"
+            alt=""
+            class="object-contain w-auto h-full md:max-h-full lg:h-4/5"
+          />
+        </div>
+
+        <!-- Hero Text -->
+        <div
+          class="flex flex-col items-center flex-1 h-auto pt-3 md:w-full md:order-1 md:pt-5 lg:justify-center lg:items-start"
+        >
+          <h1 class="text-3xl font-bold text-center md:text-6xl lg:text-left">
+            Hadirkan Kehangatan di Setiap Hidangan
+          </h1>
+          <p class="mt-2 text-center md:mt-5 md:text-2xl lg:text-left">
+            Kami percaya bahwa kehangatan tidak hanya berasal dari hidangan,
+            tapi dari suasana, pelayanan, dan cerita yang kami bangun bersama
+            setiap pelanggan.
+          </p>
+
+          <!-- Hero button -->
+          <div
+            class="flex gap-4 mt-8 justify-evenly md:gap-8 md:text-xl md:w-full md:justify-center lg:justify-start"
+          >
+            <a href="#menu">
+              <button
+                class="px-3 py-2 transition-all duration-300 ease-out border-2 rounded-md shadow-md border-huko-3 hover:bg-huko-3 hover:text-huko-secondary"
+              >
+                See Menu
+              </button>
+            </a>
+            <a href="#reservasi">
+              <button
+                class="px-3 py-2 transition-all duration-300 ease-out border-2 rounded-md shadow-md bg-huko-3 border-huko-3 text-huko-secondary"
+              >
+                Reservation
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Section Our Story -->
+    <section id="tentang-huko">
+      <!-- Story content -->
+      <div
+        class="container grid grid-cols-1 gap-4 mx-auto my-8 md:my-14 md:gap-8 lg:grid-cols-2 lg:my-20"
+      >
+        <h2
+          class="text-2xl font-bold text-center md:text-5xl lg:col-span-2 lg:text-left lg:mb-5"
+        >
+          Kisah <span class="text-huko-3">HUKO</span>
+        </h2>
+
+        <!-- Story Image -->
+        <div class="flex items-center justify-center w-full">
+          <img
+            src="../img/story-huko.webp"
+            alt="HUKO interior"
+            class="object-cover w-11/12 rounded-lg shadow-md lg:w-full lg:h-full lg:rounded-xl"
+          />
+        </div>
+
+        <!-- Story Text -->
+        <div class="flex flex-col gap-2 mx-2 md:text-2xl md:mx-4 lg:mx-0">
+          <p
+            class="leading-6 text-balance line-clamp-4 md:leading-8 lg: lg:line-clamp-none lg:leading-9"
+          >
+            <span class="font-bold">HUKO</span> Cafe menawarkan ruang untuk
+            bersantai dan menikmati waktu luang dengan keunggulan pada desain
+            arsitektur yang unik, menggunakan kaca besar yang menghubungkan
+            interior dan eksterior secara seamless. Hal ini menciptakan
+            lingkungan yang tidak hanya nyaman untuk makan dan minum, tetapi
+            juga untuk bekerja atau berkumpul bersama teman-teman. Fokus pada
+            kesederhanaan dan keterbukaan menciptakan perasaan bebas dan
+            harmonis, berbeda dari kebanyakan cafe yang mungkin cenderung lebih
+            tertutup atau kompleks dalam desainnya.
+          </p>
+          <a
+            href=""
+            class="italic font-normal tracking-wide transition-all duration-200 ease-in-out text-huko-3 hover:text-huko-1"
+            ><span class="">Cerita Selengkapnya</span></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Signature Menu -->
+    <section id="menu" class="py-1 bg-huko-secondary">
+      <div
+        class="container flex flex-col items-center gap-4 mx-auto md:gap-8 md:my-4"
+      >
+        <h2
+          class="text-2xl font-bold text-center md:text-5xl md:col-span-2 lg:col-span-3 lg:mb-5"
+        >
+          Pilihan Terbaik dari <span class="text-huko-3">HUKO</span>
+        </h2>
+
+        <!-- Menu Signature -->
+        <div
+          class="grid w-full grid-cols-1 gap-6 md:border-2 md:grid-cols-2 lg:grid-cols-3 md:bg-huko-secondary md:py-10 md:rounded-xl"
+        >
+          <!-- card 1 -->
+          <div
+            class="w-4/5 pb-3 mx-auto overflow-hidden transition-all duration-500 ease-in-out border-2 rounded-lg shadow-lg md:bg-white lg:w-auto md:w-auto md:pb-6 group border-huko-1 hover:scale-110 hover:shadow-xl"
+          >
+            <img
+              src="../img/food-1.webp"
+              alt="HUKO Signature Menu 1"
+              class="object-cover w-full transition-all duration-500 ease-in-out h-3/5 h-9/12 group-hover:scale-105"
+            />
+
+            <div class="flex flex-col gap-3 mt-2 ml-2">
+              <h3 class="text-lg font-bold">Rice Bowl HUKO</h3>
+              <p>
+                Nasi yang dipadukan dengan ayam pop menggunakan saus (Saus
+                Padang, Blackpaper, Cabe Ijo)
+              </p>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="w-4/5 pb-3 mx-auto overflow-hidden transition-all duration-500 ease-in-out border-2 rounded-lg shadow-lg md:bg-white md:w-auto md:pb-6 group border-huko-1 hover:scale-110 hover:shadow-xl"
+          >
+            <img
+              src="../img/food-3.webp"
+              alt="HUKO Signature Menu 1"
+              class="object-cover w-full transition-all duration-500 ease-in-out h-3/5 h-9/12 group-hover:scale-105"
+            />
+
+            <div class="flex flex-col gap-3 mt-2 ml-2">
+              <h3 class="text-lg font-bold">Pure Clarified</h3>
+              <p>
+                Ekstrak dari susu yang dicampur dengan sirup dan lemon yang
+                melalui ekstraksi V60
+              </p>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="w-4/5 pb-3 mx-auto overflow-hidden transition-all duration-500 ease-in-out border-2 rounded-lg shadow-lg md:bg-white md:w-auto md:pb-6 group border-huko-1 hover:scale-110 hover:shadow-xl"
+          >
+            <img
+              src="../img/food-2.webp"
+              alt="HUKO Signature Menu 1"
+              class="object-cover w-full transition-all duration-500 ease-in-out h-3/5 h-9/12 group-hover:scale-105"
+            />
+
+            <div class="flex flex-col gap-3 mt-2 ml-2">
+              <h3 class="text-lg font-bold">Mie Nyemek</h3>
+              <p>
+                Mie dengan sedikit kuah yang disajikan dengan telur, sayuran dan
+                kerupuk
+              </p>
+            </div>
+          </div>
+
+          <div class="flex justify-center md:col-span-2 lg:col-span-3 md:mt-4">
+            <button
+              class="px-3 py-1 transition-all duration-300 ease-in-out rounded-full lg:px-5 md:py-2 md:text-xl lg:py-1 bg-huko-3 text-huko-secondary hover:bg-huko-1 hover:text-huko-primary"
+            >
+              Lihat Menu Lainnya
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Map -->
+    <section id="location">
+      <div
+        class="container flex flex-col items-center gap-4 mx-auto my-8 md:gap-8 md:my-14"
+      >
+        <h2
+          class="text-2xl font-bold text-center md:text-5xl lg:mb-5 lg:col-span-2"
+        >
+          Temukan <span class="text-huko-3">HUKO</span> dengan mudah
+        </h2>
+
+        <div
+          class="flex flex-col items-center gap-4 lg:flex-row lg:w-full lg:gap-2"
+        >
+          <!-- time, location, contact -->
+          <div
+            class="flex flex-col items-center w-11/12 gap-3 lg:w-2/5 lg:h-full md:text-xl md:flex-row md:justify-evenly md:order-2 lg:flex-col"
+          >
+            <div
+              class="flex items-center justify-center w-11/12 gap-3 px-3 py-2 rounded-md lg:h-40 lg:w-full md:gap-7 md:py-5 lg:flex-row lg:py-0 md:justify-start md:h-64 md:flex-col md:w-4/12 lg:p-4 lg:justify-between bg-huko-secondary"
+            >
+              <i
+                class="fa-solid fa-location-dot fa-xl"
+                style="color: #4682d4"
+              ></i>
+              <div class="md:text-center">
+                <h4 class="font-bold">Lokasi</h4>
+                <p class="">
+                  Jl. Raya Perumnas Jalan Galuh Mas Raya No.A17, Wadas,
+                  Telukjambe Timur, Karawang
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-start w-11/12 gap-3 px-3 py-2 rounded-md lg:h-40 lg:w-full md:gap-7 md:py-5 lg:flex-row lg:py-0 md:justify-start md:h-64 md:flex-col md:w-4/12 lg:p-4 lg:justify-between bg-huko-secondary"
+            >
+              <i class="fa-solid fa-clock fa-xl" style="color: #4682d4"></i>
+              <div>
+                <h4 class="font-bold md:text-center">Jam Buka</h4>
+                <div class="flex justify-between gap-8 lg:gap-0">
+                  <p>Senin - Sabtu</p>
+                  <span>11:00 - 22:00</span>
+                </div>
+                <div class="flex justify-between">
+                  <p>Minggu</p>
+                  <span>11:00 - 23:00</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-start w-11/12 gap-3 px-3 py-2 rounded-md md:text-center lg:h-40 lg:w-full md:gap-7 md:py-5 lg:flex-row lg:py-0 md:justify-start md:h-64 md:flex-col md:w-4/12 lg:p-4 lg:justify-center bg-huko-secondary"
+            >
+              <i class="fa-solid fa-phone fa-xl" style="color: #4682d4"></i>
+              <div>
+                <h4 class="font-bold">Kontak</h4>
+                <p>0877-8799-4848</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- map -->
+          <div
+            class="flex justify-center w-11/12 overflow-hidden md:h-96 lg:order-2"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4485630296817!2d107.27241417370168!3d-6.335895061989827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699d4070bf8813%3A0xa9180c70e45aefc6!2sHUKO%20Cafe!5e0!3m2!1sen!2sid!4v1725833117089!5m2!1sen!2sid"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="w-full h-full rounded-lg"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Reservation -->
+    <section
+      style="background-image: url(../img/form-image.webp)"
+      class="w-full bg-cover text-huko-secondary md:bg-center"
+      id="reservasi"
+    >
+      <div
+        class="container relative z-10 flex flex-col items-center py-5 mx-auto my-8"
+      >
+        <h2 class="mb-4 text-2xl font-bold lg:mb-10 md:text-5xl">
+          Form Reservasi
+        </h2>
+
+        <form
+          action="#"
+          class="w-4/5 px-3 bg-transparent border-2 rounded-lg backdrop-blur-sm border-huko-1 lg:w-3/5 lg:px-32"
+        >
+          <div class="my-2 lg:flex lg:flex-col lg:gap-2">
+            <label for="" class="block md:text-2xl">Nama</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Masukkan Namanya yaa"
+              class="w-full px-3 text-sm italic tracking-wider border-b-2 rounded-full font-extralight md:text-lg"
+            />
+          </div>
+
+          <div class="my-2 lg:flex lg:flex-col lg:gap-2">
+            <label for="" class="block md:text-2xl">No. Handphone</label>
+            <input
+              type="tel"
+              placeholder="No. HP nya juga jangan lupa"
+              class="w-full px-3 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
+            />
+          </div>
+
+          <div class="my-2 lg:flex lg:flex-col lg:gap-2">
+            <label for="" class="block md:text-2xl">Jumlah Tamu</label>
+            <input
+              type="number"
+              placeholder="Berapa orang nih.."
+              class="w-full px-3 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
+            />
+          </div>
+
+          <div class="my-2 lg:flex lg:flex-col lg:gap-2">
+            <label for="" class="block md:text-2xl">Tanggal</label>
+            <input
+              type="date"
+              class="w-full px-3 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
+            />
+          </div>
+
+          <div class="my-2 lg:flex lg:flex-col lg:gap-2">
+            <label for="" class="block md:text-2xl">Waktu</label>
+            <input
+              type="time"
+              class="w-full px-3 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
+            />
+          </div>
+
+          <div class="my-2 lg:flex lg:flex-col lg:gap-2">
+            <label for="" class="block md:text-2xl">Nama</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Smoking area, area sofa"
+              class="w-full px-3 text-sm italic tracking-wider border-b-2 rounded-full font-extralight md:text-lg"
+            />
+          </div>
+
+          <div class="my-5 text-center">
+            <button
+              class="w-1/2 max-w-full py-1 mx-auto transition-all duration-300 ease-in-out rounded-full shadow-md md:text-xl bg-huko-3 text-huko-secondary hover:bg-huko-1 hover:text-huko-primary hover:shadow-xl hover:scale-105"
+            >
+              Reservasi
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section Gallery -->
+    <section id="gallery">
+      <div class="container mx-auto my-8 md:my-14">
+        <h2 class="mb-4 text-2xl font-bold text-center md:text-5xl md:mb-12">
+          Abadikan momenmu bersama <span class="text-huko-3">HUKO</span>
+        </h2>
+        <div
+          class="grid w-11/12 grid-cols-1 gap-3 mx-auto md:grid-cols-2 lg:grid-cols-4 lg:gap-4 lg:w-full"
+        >
+          <div class="h-64 lg:col-span-2">
+            <img
+              class="object-cover w-full h-full rounded-lg"
+              src="../img/galery-1.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="h-64">
+            <img
+              class="object-cover w-full h-full rounded-lg"
+              src="../img/galery-2.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="h-64">
+            <img
+              class="object-cover w-full h-full rounded-lg"
+              src="../img/galery-3.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="h-64">
+            <img
+              class="object-cover w-full h-full rounded-lg"
+              src="../img/galery-4.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="h-64">
+            <img
+              class="object-cover w-full h-full rounded-lg"
+              src="../img/food-3.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="h-64 lg:col-span-2">
+            <img
+              class="object-cover w-full h-full rounded-lg"
+              src="../img/story-huko.webp"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="my-4 text-center">
+          <a
+            href=""
+            class="transition-all duration-300 ease-in-out text-huko-3 hover:text-huko-secondary lg:text-xl"
+          >
+            Lihat momen seru lainnya
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer" class="bg-huko-secondary">
+      <div
+        class="container flex items-center justify-between gap-20 px-2 py-4 mx-auto lg:justify-start lg:gap-52 md:items-start"
+      >
+        <div class="grid grid-rows-1 md:gap-5 md:w-4/12">
+          <a href=""
+            ><img class="w-20 md:w-28" src="../img/image.webp" alt=""
+          /></a>
+          <p class="hidden text-lg md:block">
+            Jl. Bharata Raya, Jl. Raya Perumnas Jalan Galuh Mas Raya No.A17,
+            Wadas, Telukjambe Timur, Karawang, Jawa Barat 41361
+          </p>
+        </div>
+        <div class="hidden md:grid tex-lg md:gap-5 md:grid-cols-1">
+          <a
+            href="#landing-page"
+            class="transition-all duration-300 ease-in-out hover:text-huko-3"
+            >Home</a
+          >
+          <a
+            href="#tentang-huko"
+            class="transition-all duration-300 ease-in-out hover:text-huko-3"
+            >About Us</a
+          >
+          <a
+            href="#menu"
+            class="transition-all duration-300 ease-in-out hover:text-huko-3"
+            >Menu</a
+          >
+          <a
+            href="#location"
+            class="transition-all duration-300 ease-in-out hover:text-huko-3"
+            >Location</a
+          >
+          <a
+            href="#gallery"
+            class="transition-all duration-300 ease-in-out hover:text-huko-3"
+            >Gallery</a
+          >
+        </div>
+        <div class="flex justify-center w-auto h-auto gap-3 p-3 md:gap-5">
+          <a
+            href="https://www.instagram.com/hukofficial.id/?hl=en"
+            target="_blank"
+            ><i class="fa-brands fa-instagram fa-lg md:fa-2xl"></i
+          ></a>
+          <a href="https://maps.app.goo.gl/tmNqi9Am92fAfyNY7" target="_blank"
+            ><i class="fa-solid fa-location-dot fa-lg md:fa-2xl"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
