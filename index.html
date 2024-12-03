@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/87ee3a16a9.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="src/output.css" />
     <title>Huko Cafe</title>
   </head>
   <body class="text-huko-primary">
@@ -239,7 +239,7 @@
 
         <!-- Menu Signature -->
         <div
-          class="grid w-full grid-cols-1 gap-6 md:border-2 md:grid-cols-2 lg:grid-cols-3 md:bg-huko-secondary md:py-10 md:rounded-xl"
+          class="grid w-full grid-cols-1 gap-6 md:border-2 md:grid-cols-2 lg:h-max lg:grid-cols-3 md:bg-huko-secondary md:py-10 md:rounded-xl"
         >
           <!-- card 1 -->
           <div
@@ -321,20 +321,20 @@
         </h2>
 
         <div
-          class="flex flex-col items-center gap-4 lg:flex-row lg:w-full lg:gap-2"
+          class="flex flex-col items-center gap-4 lg:flex-row lg:w-full lg:gap-5"
         >
           <!-- time, location, contact -->
           <div
             class="flex flex-col items-center w-11/12 gap-3 lg:w-2/5 lg:h-full md:text-xl md:flex-row md:justify-evenly md:order-2 lg:flex-col"
           >
             <div
-              class="flex items-center justify-center w-11/12 gap-3 px-3 py-2 rounded-md lg:h-40 lg:w-full md:gap-7 md:py-5 lg:flex-row lg:py-0 md:justify-start md:h-64 md:flex-col md:w-4/12 lg:p-4 lg:justify-between bg-huko-secondary"
+              class="flex items-center justify-center w-11/12 gap-3 px-3 py-2 rounded-md lg:h-40 lg:w-full md:gap-7 md:py-5 lg:flex-row lg:py-0 md:justify-start md:h-64 md:flex-col md:w-4/12 lg:p-4 lg:justify-start bg-huko-secondary"
             >
               <i
                 class="fa-solid fa-location-dot fa-xl"
                 style="color: #4682d4"
               ></i>
-              <div class="md:text-center">
+              <div class="">
                 <h4 class="font-bold">Lokasi</h4>
                 <p class="">
                   Jl. Raya Perumnas Jalan Galuh Mas Raya No.A17, Wadas,
@@ -344,12 +344,12 @@
             </div>
 
             <div
-              class="flex items-center justify-start w-11/12 gap-3 px-3 py-2 rounded-md lg:h-40 lg:w-full md:gap-7 md:py-5 lg:flex-row lg:py-0 md:justify-start md:h-64 md:flex-col md:w-4/12 lg:p-4 lg:justify-between bg-huko-secondary"
+              class="flex items-center justify-start w-11/12 gap-3 px-3 py-2 rounded-md lg:h-40 lg:w-full md:gap-7 md:py-5 lg:flex-row lg:py-0 md:justify-start md:h-64 md:flex-col md:w-4/12 lg:p-4 lg:justify-start bg-huko-secondary"
             >
               <i class="fa-solid fa-clock fa-xl" style="color: #4682d4"></i>
               <div>
-                <h4 class="font-bold md:text-center">Jam Buka</h4>
-                <div class="flex justify-between gap-8 lg:gap-0">
+                <h4 class="font-bold">Jam Buka</h4>
+                <div class="flex justify-between gap-8 lg:gap-3">
                   <p>Senin - Sabtu</p>
                   <span>11:00 - 22:00</span>
                 </div>
@@ -361,7 +361,7 @@
             </div>
 
             <div
-              class="flex items-center justify-start w-11/12 gap-3 px-3 py-2 rounded-md md:text-center lg:h-40 lg:w-full md:gap-7 md:py-5 lg:flex-row lg:py-0 md:justify-start md:h-64 md:flex-col md:w-4/12 lg:p-4 lg:justify-center bg-huko-secondary"
+              class="flex items-center justify-start w-11/12 gap-3 px-3 py-2 rounded-md lg:h-40 lg:w-full md:gap-7 md:py-5 lg:flex-row lg:py-0 md:justify-start md:h-64 md:flex-col md:w-4/12 lg:p-4 lg:justify-start bg-huko-secondary"
             >
               <i class="fa-solid fa-phone fa-xl" style="color: #4682d4"></i>
               <div>
@@ -373,13 +373,15 @@
 
           <!-- map -->
           <div
-            class="flex justify-center w-11/12 overflow-hidden md:h-96 lg:order-2"
+            class="flex justify-center w-11/12 h-full border md:h-96 lg:w-full lg:order-2"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4485630296817!2d107.27241417370168!3d-6.335895061989827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699d4070bf8813%3A0xa9180c70e45aefc6!2sHUKO%20Cafe!5e0!3m2!1sen!2sid!4v1725833117089!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4485630296817!2d107.27241417370168!3d-6.335895061989827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699d4070bf8813%3A0xa9180c70e45aefc6!2sHUKO%20Cafe!5e0!3m2!1sen!2sid!4v1729140714806!5m2!1sen!2sid"
+              style="border: 0"
+              allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="w-full h-full rounded-lg"
+              class="w-full h-full"
             ></iframe>
           </div>
         </div>
@@ -389,9 +391,10 @@
     <!-- Section Reservation -->
     <section
       style="background-image: url(../img/form-image.webp)"
-      class="w-full bg-cover text-huko-secondary md:bg-center"
+      class="relative w-full bg-cover text-huko-secondary md:bg-center"
       id="reservasi"
     >
+      <div class="absolute inset-0 w-full h-full bg-slate-950/50 z-100"></div>
       <div
         class="container relative z-10 flex flex-col items-center py-5 mx-auto my-8"
       >
@@ -401,7 +404,7 @@
 
         <form
           action="#"
-          class="w-4/5 px-3 bg-transparent border-2 rounded-lg backdrop-blur-sm border-huko-1 lg:w-3/5 lg:px-32"
+          class="w-4/5 px-3 bg-transparent border-2 rounded-lg text-huko-primary backdrop-blur-lg border-huko-1 lg:w-3/5 lg:px-32"
         >
           <div class="my-2 lg:flex lg:flex-col lg:gap-2">
             <label for="" class="block md:text-2xl">Nama</label>
@@ -410,7 +413,7 @@
               name=""
               id=""
               placeholder="Masukkan Namanya yaa"
-              class="w-full px-3 text-sm italic tracking-wider border-b-2 rounded-full font-extralight md:text-lg"
+              class="w-full px-3 py-1 text-sm italic tracking-wider border-b-2 rounded-full font-extralight md:text-lg"
             />
           </div>
 
@@ -419,7 +422,7 @@
             <input
               type="tel"
               placeholder="No. HP nya juga jangan lupa"
-              class="w-full px-3 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
+              class="w-full px-3 py-1 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
             />
           </div>
 
@@ -428,7 +431,7 @@
             <input
               type="number"
               placeholder="Berapa orang nih.."
-              class="w-full px-3 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
+              class="w-full px-3 py-1 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
             />
           </div>
 
@@ -436,7 +439,7 @@
             <label for="" class="block md:text-2xl">Tanggal</label>
             <input
               type="date"
-              class="w-full px-3 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
+              class="w-full px-3 py-1 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
             />
           </div>
 
@@ -444,7 +447,7 @@
             <label for="" class="block md:text-2xl">Waktu</label>
             <input
               type="time"
-              class="w-full px-3 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
+              class="w-full px-3 py-1 text-sm italic tracking-wider rounded-full font-extralight md:text-lg"
             />
           </div>
 
@@ -455,7 +458,7 @@
               name=""
               id=""
               placeholder="Smoking area, area sofa"
-              class="w-full px-3 text-sm italic tracking-wider border-b-2 rounded-full font-extralight md:text-lg"
+              class="w-full px-3 py-1 text-sm italic tracking-wider border-b-2 rounded-full font-extralight md:text-lg"
             />
           </div>
 
